@@ -1,0 +1,92 @@
+/*TabNine::sem*/
+
+:root{
+  --black: #161414;
+  --space-green: #97CE4C;
+  --space-purple: #E762D7;
+  --white: #FFF;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Open Sans", "Helvetica Neue";
+  width: 100%;
+  background-color: var(--black);
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  min-width: 320px;
+  height: 54px;
+  padding-top: 25px;
+}
+
+header .container-logo {
+  width: 40px;
+  height: 40px;
+}
+
+header .container-logo img {
+  width: 100%;
+  height: 100%;
+}
+
+header .container-title {
+  width: 151px;
+  height: 32px;
+}
+
+header .container-title span{
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/title-image.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat
+}
+
+
+header .container-API a {
+  text-decoration: none;
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: var(--space-green);
+}
+
+section .container-background {
+  width: 100%;
+  padding-top: 20px;
+}
+
+section .container-background img {
+  width: 100%;
+  height: auto;
+}
+
+.main-characters {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.main-characters .container-title {
+  color: var(--white);
+  display: inline;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0 auto;
+}
+
+
+
