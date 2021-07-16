@@ -25,7 +25,7 @@ html {
 
 header {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
   min-width: 320px;
@@ -34,8 +34,11 @@ header {
 }
 
 header .container-logo {
-  width: 40px;
-  height: 40px;
+  min-width: 40px;
+  min-height: 40px;
+  max-width: 70px;
+  max-height: 70px;
+  padding: 5px 5px 5px 15px;
 }
 
 header .container-logo img {
@@ -64,23 +67,27 @@ header .container-API a {
   font-size: 1.7rem;
   font-weight: bold;
   color: var(--space-green);
+  padding-right: 15px;
 }
 
 section .container-background {
   width: 100%;
   padding-top: 20px;
-  paddint: 20px 0 auto;
+  padding: 20px 0 auto;
 }
 
 section .container-background img {
+  object-fit: cover;
   width: 100%;
-  height: auto;
+  min-height: 223px;
+  max-height: 550px;
 }
 
 .main-characters {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width:  100%;
 }
 
 .main-characters .container-title {
@@ -94,7 +101,8 @@ section .container-background img {
 .characters-container {
   display: grid;
   width: 100%;
-  grid-template: repeat(2, 80px)/ repeat(3, 75px);
+  grid-template-columns: repeat(3, minmax(80px, 150px));
+  grid-auto-flow: row dense;
   justify-content: center;
   justify-items: center;
   gap: 1.7rem;
@@ -105,8 +113,8 @@ section .container-background img {
 
 .characters-container img {
   border-radius: 25px;
+  max-height: 100%;
+  margin: 15px;
   width: 100%;
-  height: 72px;
-  margin: 5px;
 }
 
