@@ -136,3 +136,38 @@ section .container-background img {
   grid-template-columns: repeat(3, minmax(80px, 210px));
 }
 
+.character-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--white);
+  width: 100%;
+  margin-top: 20px;
+}
+
+.character-card .character-card__img {
+  width: 100%;
+  height: 350px;
+  background-image: url("../img/rick-image.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 15px 0px 35px 0px;
+}
+
+.character-information {
+  display: flex;
+  flex-direction: column;
+  align-items:  center;
+}
+
+.character-information .character-information__title {
+  margin-bottom: 25px;
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+.character-information .character-information__detail {
+  font-size: 1.5rem;
+  line-height: 4.5rem;
+}
