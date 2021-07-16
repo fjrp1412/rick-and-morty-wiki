@@ -23,6 +23,10 @@ html {
   background-color: var(--black);
 }
 
+a {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -117,11 +121,14 @@ section .container-background img {
   border-top: 2px solid var(--space-purple);
   border-bottom: 2px solid var(--space-purple);
 }
-
+.characters-container a {
+  width: 100%;
+  max-height: 100%;
+  text-decoration: none;
+}
 .characters-container img {
   border-radius: 25px;
   max-height: 100%;
-  margin: 15px;
   width: 100%;
 }
 
