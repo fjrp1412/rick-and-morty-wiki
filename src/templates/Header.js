@@ -6,7 +6,7 @@ const Header = () => {
       </div>
 
       <div class="container-title">
-	<img src="../assets/images/title-image.png" alt="">
+	<img src="./assets/images/title-image.png" alt="">
       </div>
 
       <div class="container-API">
