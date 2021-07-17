@@ -107,10 +107,9 @@ section .container-background img {
   display: grid;
   width: 100%;
   grid-template-columns: repeat(3, minmax(80px, 150px));
-  grid-auto-flow: row;
+  grid-gap: 25px;
   justify-content: center;
   justify-items: center;
-  gap: 1.7rem;
   padding: 10px 15px 0px 15px;
   border-top: 2px solid var(--space-green);
   border-bottom: 2px solid var(--space-green);
@@ -120,6 +119,7 @@ section .container-background img {
   margin-top: 5px;
   border-top: 2px solid var(--space-purple);
   border-bottom: 2px solid var(--space-purple);
+  grid-auto-flow: row;
 }
 .characters-container a {
   width: 100%;
@@ -148,7 +148,6 @@ section .container-background img {
 .character-card .character-card__img {
   width: 100%;
   height: 350px;
-  background-image: url("../assets/images/rick-image.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
