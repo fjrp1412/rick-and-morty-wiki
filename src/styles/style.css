@@ -55,14 +55,10 @@ header .container-title {
   height: 32px;
 }
 
-header .container-title span{
+header .container-title img{
   display: inline-block;
   width: 100%;
   height: 100%;
-  background-image: url("../assets/images/title-image.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat
 }
 
 
