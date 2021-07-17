@@ -10,6 +10,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "[name].js",
+    assetModuleFilename: "assets/images/[hash][ext][query]",
   },
 
   mode: "production",
